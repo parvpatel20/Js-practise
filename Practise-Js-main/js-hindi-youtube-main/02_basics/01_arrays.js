@@ -6,6 +6,9 @@ const myHeors = ["shaktiman", "naagraj"]
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
+// console.log(typeof(myArr));
+// console.log(typeof(myArr2));
+
 // Array methods
 
 // myArr.push(6)
@@ -18,11 +21,12 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join()
+const newArr = myArr.join() // converts in string
 
 // console.log(myArr);
 // console.log( newArr);
 
+// console.log(typeof(newArr));
 
 // slice, splice
 

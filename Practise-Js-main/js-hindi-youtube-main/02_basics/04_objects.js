@@ -5,7 +5,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",
@@ -20,14 +20,17 @@ const regularUser = {
 // console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "a", 4: "b"}
-const obj4 = {5: "a", 6: "b"}
+const obj2 = {3: "c", 4: "d"}
+const obj3 = {5: "e", 6: "f"}
 
-// const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+const merged = Object.assign({}, obj1, obj2, obj3);
+const obj4 = {...obj1, ...obj2, ...obj3};
 
-const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
+console.log(obj1);
+console.log(obj2);
+console.log(obj3);
+console.log(merged);
+console.log(obj4);
 
 
 const users = [
@@ -50,7 +53,7 @@ users[1].email
 
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+console.log(Object.entries(tinderUser)); // take entry one by one and creates array where elements = entries.
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
@@ -63,10 +66,10 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor : ci} = course
 
 // console.log(courseInstructor);
-console.log(instructor);
+console.log(ci);
 
 // {
 //     "name": "hitesh",
